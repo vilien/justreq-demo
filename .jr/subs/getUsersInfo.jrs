@@ -1,0 +1,13 @@
+const Mock = require('mockjs');
+
+let data = Mock.mock({
+  'userId': $_GET['userId'],
+  'name': '@name',
+  'age|10-50': 18,
+  'sex': '@boolean',
+  'weight|30-100': 53,
+  'height|150-200': 170,
+  'bio': '@sentence'
+});
+
+end(data);

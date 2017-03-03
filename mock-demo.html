@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Users List</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="./bower_components/zepto/zepto.min.js"></script>
+<script src="js/mock-user.js"></script>
+</head>
+<body>
+<h1>Users List</h1>
+<input onclick="getUsersList()" type="button" value="Reload Users List">
+<hr>
+<div class="flex-wrap">
+  <ul id="users-list" style="width:230px"></ul>
+  <div class="flex-item user-info">
+    <p>
+      <span class="label">UserID:</span>
+      <span id="userId"></span>
+    </p>
+    <p>
+      <span class="label">Name:</span>
+      <span id="name"></span></p>
+    <p>
+      <span class="label">Age:</span>
+      <span id="age"></span>
+    </p>
+    <p>
+      <span class="label">Sex:</span>
+      <span id="sex"></span>
+    </p>
+    <p>
+      <span class="label">Weight:</span>
+      <span id="weight"></span>
+    </p>
+    <p>
+      <span class="label">Height:</span>
+      <span id="height"></span>
+    </p>
+    <p>
+      <span class="label">Bio:</span>
+      <span id="bio"></span>
+    </p>
+  </div>
+</div>
+<hr>
+<h2>怎么做到的呢？</h2>
+<p>你只要在.justreq文件添加如下规则，并编写相应的getUsersList.jrs、getUsersInfo.jrs文件即可</p>
+<pre>
+{
+  ...
+  "rules": [
+    {
+      "href": "getUsersList.do",
+      "subs": "getUsersList.jrs"
+    },
+    {
+      "href": "getUsersInfo.do",
+      "subs": "getUsersInfo.jrs"
+    }
+  ]
+}
+</pre>
+<p class="tips">本示例所使用jrs文件位于“.jr/subs/jrs/”</p>
+</body>
+</html>

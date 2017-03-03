@@ -1,0 +1,25 @@
+{
+  "name": "justreq-demo",
+  "version": "1.0.0",
+  "description": "justreq的dome项目",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilien/justreq-demo.git"
+  },
+  "author": "Vilien",
+  "license": "ISC",
+  "keywords": [
+    "justreq-demo",
+    "proxy",
+    "mock-server",
+    "cache",
+    "offline",
+    "http",
+    "https"
+  ],
+  "dependencies": {
+    "justreq": "^0.3.3",
+    "mockjs": "^1.0.1-beta3"
+  }
+}
